@@ -1,4 +1,4 @@
-# Json Viewer
+# [Json Viewer](http://overtrue.me/json-viewer)
 A tool for make JSON view in browser.
 
 # Usage
@@ -30,11 +30,11 @@ A tool for make JSON view in browser.
         }
     };
 
-    $('#json-container').jsonview(json); // json string/json object
+    $('#json-container').jsonview(json); // Support json string/object
 </script>
 ```
 
-## [Demo](http://overtrue.me/json-viewer)
+[Demo](http://overtrue.me/json-viewer)
 
 # License
 
