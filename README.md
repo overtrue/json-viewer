@@ -3,7 +3,7 @@ A tool for make JSON view in browser.
 
 # Usage
 
-```js
+```html
 
 <link rel="stylesheet" href="json-viewer/json-viewer.css">
 <script src="path/to/jquery.js"></script>
