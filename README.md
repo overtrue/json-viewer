@@ -12,10 +12,24 @@ A tool for make JSON view in browser.
 <div id="json-container"></div>
 
 <script>
-    var json = {
-        foo: "bar",
-        number: 123,
-    }
+    var json = '  {
+        "name": "JsonViewer",
+        "author": {
+          "name": "overtrue",
+          "email": "i@overtrue.me",
+          "contact": [
+            {
+              "location": "office",
+              "number": 123456
+            },
+            {
+              "location": "home",
+              "number": 987654
+            }
+          ]
+        }
+      }
+    ';
 
     $('#json-container').jsonview(json);
 </script>
