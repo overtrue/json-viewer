@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <link rel="stylesheet" href="json-viewer.css">
   </head>
   <body>
     <section class="page-header">
@@ -44,6 +46,33 @@
 <span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
 
 <h1>
+<a id="license" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h1>
+
+<h2>The JSON:</h2>
+<textarea name="" id="json" cols="30" rows="10">
+  {
+    "name": "JsonViewer",
+    "author": {
+      "name": "overtrue",
+      "email": "i@overtrue.me",
+      "contact": [
+        {
+          "location": "<span>office</span>",
+          "number": 123456
+        },
+        {
+          "location": "home",
+          "number": 987654
+        }
+      ]
+    }
+  }
+</textarea>
+<a href="javascript:;" class="btn" id="do">JSON view</a>
+
+<div id="json-container"></div>
+
+<h1>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
 
 <p>MIT</p>
@@ -56,6 +85,15 @@
 
     </section>
 
-  
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="json-viewer.js"></script>
+    <script>
+      (function($){
+        $('#do').on('click', function(){
+          $('#json-container').jsonview($('#json').val());
+        });
+      })(jQuery);
+    </script>
   </body>
 </html>
