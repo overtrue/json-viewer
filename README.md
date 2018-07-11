@@ -1,4 +1,4 @@
-# [Json Viewer](http://overtrue.me/json-viewer)
+# [Json Viewer](http://overtrue.github.io/json-viewer/)
 A tool for make JSON view in browser.
 
 # Usage
