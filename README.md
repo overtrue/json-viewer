@@ -34,7 +34,7 @@ A tool for make JSON view in browser.
 </script>
 ```
 
-[Demo](http://overtrue.me/json-viewer)
+[Demo](http://overtrue.github.io/json-viewer/)
 
 # License
 
